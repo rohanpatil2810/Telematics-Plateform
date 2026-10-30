@@ -1,0 +1,828 @@
+{
+ "description": "Replay steps in order against a fresh instance. For each step: set the server clock to serverTime, then INGEST the packets or just run the offline CHECK.",
+ "steps": [
+  {
+   "step": 1,
+   "serverTime": "2026-10-27T10:10:30Z",
+   "action": "INGEST",
+   "packets": [
+    {
+     "deviceId": "V301",
+     "timestamp": "2026-10-27T10:00:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V301",
+     "timestamp": "2026-10-27T10:01:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V301",
+     "timestamp": "2026-10-27T10:02:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V301",
+     "timestamp": "2026-10-27T10:03:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V301",
+     "timestamp": "2026-10-27T10:04:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V301",
+     "timestamp": "2026-10-27T10:05:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V301",
+     "timestamp": "2026-10-27T10:06:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V301",
+     "timestamp": "2026-10-27T10:07:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V301",
+     "timestamp": "2026-10-27T10:08:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V301",
+     "timestamp": "2026-10-27T10:09:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V301",
+     "timestamp": "2026-10-27T10:10:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:00:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:01:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:02:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:03:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:04:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:05:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:06:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:07:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:08:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:09:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:10:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V304",
+     "timestamp": "2026-10-27T10:00:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V304",
+     "timestamp": "2026-10-27T10:01:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V304",
+     "timestamp": "2026-10-27T10:02:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V304",
+     "timestamp": "2026-10-27T10:03:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V304",
+     "timestamp": "2026-10-27T10:04:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V304",
+     "timestamp": "2026-10-27T10:05:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V304",
+     "timestamp": "2026-10-27T10:06:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V304",
+     "timestamp": "2026-10-27T10:07:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V304",
+     "timestamp": "2026-10-27T10:08:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V304",
+     "timestamp": "2026-10-27T10:09:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V304",
+     "timestamp": "2026-10-27T10:10:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V305",
+     "timestamp": "2026-10-27T10:00:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V305",
+     "timestamp": "2026-10-27T10:01:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V305",
+     "timestamp": "2026-10-27T10:02:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V305",
+     "timestamp": "2026-10-27T10:03:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V305",
+     "timestamp": "2026-10-27T10:04:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V305",
+     "timestamp": "2026-10-27T10:05:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V305",
+     "timestamp": "2026-10-27T10:06:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V305",
+     "timestamp": "2026-10-27T10:07:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V305",
+     "timestamp": "2026-10-27T10:08:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V305",
+     "timestamp": "2026-10-27T10:09:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V305",
+     "timestamp": "2026-10-27T10:10:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V303",
+     "timestamp": "2026-10-27T10:00:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V303",
+     "timestamp": "2026-10-27T10:01:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V303",
+     "timestamp": "2026-10-27T10:02:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V303",
+     "timestamp": "2026-10-27T10:03:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V303",
+     "timestamp": "2026-10-27T10:04:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V303",
+     "timestamp": "2026-10-27T10:05:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V303",
+     "timestamp": "2026-10-27T10:06:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V303",
+     "timestamp": "2026-10-27T10:07:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V303",
+     "timestamp": "2026-10-27T10:08:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V303",
+     "timestamp": "2026-10-27T10:09:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V303",
+     "timestamp": "2026-10-27T10:10:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 0,
+     "ignition": false
+    }
+   ]
+  },
+  {
+   "step": 2,
+   "serverTime": "2026-10-27T10:20:00Z",
+   "action": "INGEST",
+   "packets": [
+    {
+     "deviceId": "V305",
+     "timestamp": "2026-10-27T10:05:30Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    }
+   ]
+  },
+  {
+   "step": 3,
+   "serverTime": "2026-10-27T10:24:00Z",
+   "action": "CHECK"
+  },
+  {
+   "step": 4,
+   "serverTime": "2026-10-27T10:25:00Z",
+   "action": "CHECK"
+  },
+  {
+   "step": 5,
+   "serverTime": "2026-10-27T10:32:30Z",
+   "action": "INGEST",
+   "packets": [
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:11:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:12:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:13:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:14:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:15:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:16:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:17:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:18:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:19:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:20:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:21:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:22:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:23:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:24:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:25:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:26:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:27:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:28:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:29:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:30:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:31:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V302",
+     "timestamp": "2026-10-27T10:32:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 0,
+     "ignition": false
+    }
+   ]
+  },
+  {
+   "step": 6,
+   "serverTime": "2026-10-27T10:35:00Z",
+   "action": "CHECK"
+  },
+  {
+   "step": 7,
+   "serverTime": "2026-10-27T10:41:30Z",
+   "action": "INGEST",
+   "packets": [
+    {
+     "deviceId": "V301",
+     "timestamp": "2026-10-27T10:40:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V301",
+     "timestamp": "2026-10-27T10:41:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 0,
+     "ignition": false
+    }
+   ]
+  },
+  {
+   "step": 8,
+   "serverTime": "2026-10-27T10:50:30Z",
+   "action": "INGEST",
+   "packets": [
+    {
+     "deviceId": "V304",
+     "timestamp": "2026-10-27T10:11:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V304",
+     "timestamp": "2026-10-27T10:12:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V304",
+     "timestamp": "2026-10-27T10:13:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V304",
+     "timestamp": "2026-10-27T10:14:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V304",
+     "timestamp": "2026-10-27T10:15:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V304",
+     "timestamp": "2026-10-27T10:16:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V304",
+     "timestamp": "2026-10-27T10:17:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V304",
+     "timestamp": "2026-10-27T10:18:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V304",
+     "timestamp": "2026-10-27T10:19:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V304",
+     "timestamp": "2026-10-27T10:20:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V304",
+     "timestamp": "2026-10-27T10:45:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V304",
+     "timestamp": "2026-10-27T10:46:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V304",
+     "timestamp": "2026-10-27T10:47:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V304",
+     "timestamp": "2026-10-27T10:48:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V304",
+     "timestamp": "2026-10-27T10:49:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 40,
+     "ignition": true
+    },
+    {
+     "deviceId": "V304",
+     "timestamp": "2026-10-27T10:50:00Z",
+     "lat": 23.03,
+     "lon": 72.55,
+     "speedKmh": 0,
+     "ignition": false
+    }
+   ]
+  },
+  {
+   "step": 9,
+   "serverTime": "2026-10-27T11:00:00Z",
+   "action": "CHECK"
+  }
+ ]
+}

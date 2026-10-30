@@ -1,0 +1,882 @@
+[
+ {
+  "deviceId": "V103",
+  "timestamp": "2026-10-26T09:20:25Z",
+  "lat": 23.03,
+  "lon": 72.511,
+  "speedKmh": 90,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:11:15Z",
+  "lat": 23.018,
+  "lon": 72.526182,
+  "speedKmh": 102,
+  "ignition": true
+ },
+ {
+  "deviceId": "V101",
+  "timestamp": "2026-10-26T09:01:15Z",
+  "lat": 23.01,
+  "lon": 72.553625,
+  "speedKmh": 55,
+  "ignition": true
+ },
+ {
+  "deviceId": "V101",
+  "timestamp": "2026-10-26T09:00:45Z",
+  "lat": 23.01,
+  "lon": 72.532273,
+  "speedKmh": 95,
+  "ignition": true
+ },
+ {
+  "deviceId": "V105",
+  "timestamp": "2026-10-26T09:40:50Z",
+  "lat": 23.041,
+  "lon": 72.55,
+  "speedKmh": 70,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:12:35Z",
+  "lat": 23.018,
+  "lon": 72.547,
+  "speedKmh": 95,
+  "ignition": true
+ },
+ {
+  "deviceId": "V101",
+  "timestamp": "2026-10-26T09:00:05Z",
+  "lat": 23.01,
+  "lon": 72.521364,
+  "speedKmh": 95,
+  "ignition": true
+ },
+ {
+  "deviceId": "V103",
+  "timestamp": "2026-10-26T09:21:05Z",
+  "lat": 23.03,
+  "lon": 72.5198,
+  "speedKmh": 90,
+  "ignition": true
+ },
+ {
+  "deviceId": "V104",
+  "timestamp": "2026-10-26T09:30:00Z",
+  "lat": 23.09,
+  "lon": 72.505,
+  "speedKmh": 70,
+  "ignition": true
+ },
+ {
+  "deviceId": "V104",
+  "timestamp": "2026-10-26T09:30:30Z",
+  "lat": 23.09,
+  "lon": 72.511,
+  "speedKmh": 70,
+  "ignition": true
+ },
+ {
+  "deviceId": "V104",
+  "timestamp": "2026-10-26T09:30:20Z",
+  "lat": 23.09,
+  "lon": 72.509,
+  "speedKmh": 70,
+  "ignition": true
+ },
+ {
+  "deviceId": "V104",
+  "timestamp": "2026-10-26T09:30:35Z",
+  "lat": 23.09,
+  "lon": 72.512,
+  "speedKmh": 70,
+  "ignition": true
+ },
+ {
+  "deviceId": "V101",
+  "timestamp": "2026-10-26T09:00:50Z",
+  "lat": 23.01,
+  "lon": 72.533636,
+  "speedKmh": 95,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:11:10Z",
+  "lat": 23.018,
+  "lon": 72.524818,
+  "speedKmh": 102,
+  "ignition": true
+ },
+ {
+  "deviceId": "V103",
+  "timestamp": "2026-10-26T09:20:35Z",
+  "lat": 23.03,
+  "lon": 72.513,
+  "speedKmh": 70,
+  "ignition": true
+ },
+ {
+  "deviceId": "V103",
+  "timestamp": "2026-10-26T09:20:30Z",
+  "lat": 23.03,
+  "lon": 72.512,
+  "speedKmh": 70,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:12:05Z",
+  "lat": 23.018,
+  "lon": 72.5395,
+  "speedKmh": 108,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:12:25Z",
+  "lat": 23.018,
+  "lon": 72.5445,
+  "speedKmh": 95,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:10:30Z",
+  "lat": 23.018,
+  "lon": 72.514,
+  "speedKmh": 110,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:10:15Z",
+  "lat": 23.018,
+  "lon": 72.5095,
+  "speedKmh": 110,
+  "ignition": true
+ },
+ {
+  "deviceId": "V103",
+  "timestamp": "2026-10-26T09:20:40Z",
+  "lat": 23.03,
+  "lon": 72.514,
+  "speedKmh": 70,
+  "ignition": true
+ },
+ {
+  "deviceId": "V103",
+  "timestamp": "2026-10-26T09:20:00Z",
+  "lat": 23.03,
+  "lon": 72.505,
+  "speedKmh": 90,
+  "ignition": true
+ },
+ {
+  "deviceId": "V103",
+  "timestamp": "2026-10-26T09:21:00Z",
+  "lat": 23.03,
+  "lon": 72.5186,
+  "speedKmh": 90,
+  "ignition": true
+ },
+ {
+  "deviceId": "V101",
+  "timestamp": "2026-10-26T09:02:10Z",
+  "lat": 23.01,
+  "lon": 72.5596,
+  "speedKmh": 0,
+  "ignition": false
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:12:40Z",
+  "lat": 23.018,
+  "lon": 72.548,
+  "speedKmh": 0,
+  "ignition": false
+ },
+ {
+  "deviceId": "V101",
+  "timestamp": "2026-10-26T09:00:40Z",
+  "lat": 23.01,
+  "lon": 72.530909,
+  "speedKmh": 95,
+  "ignition": true
+ },
+ {
+  "deviceId": "V101",
+  "timestamp": "2026-10-26T09:01:45Z",
+  "lat": 23.01,
+  "lon": 72.5585,
+  "speedKmh": 25,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:10:00Z",
+  "lat": 23.018,
+  "lon": 72.505,
+  "speedKmh": 110,
+  "ignition": true
+ },
+ {
+  "deviceId": "V103",
+  "timestamp": "2026-10-26T09:20:15Z",
+  "lat": 23.03,
+  "lon": 72.5086,
+  "speedKmh": 90,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:10:25Z",
+  "lat": 23.018,
+  "lon": 72.5125,
+  "speedKmh": 110,
+  "ignition": true
+ },
+ {
+  "deviceId": "V104",
+  "timestamp": "2026-10-26T09:30:40Z",
+  "lat": 23.09,
+  "lon": 72.513,
+  "speedKmh": 70,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:10:50Z",
+  "lat": 23.018,
+  "lon": 72.519364,
+  "speedKmh": 102,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:11:25Z",
+  "lat": 23.018,
+  "lon": 72.528909,
+  "speedKmh": 102,
+  "ignition": true
+ },
+ {
+  "deviceId": "V104",
+  "timestamp": "2026-10-26T09:30:10Z",
+  "lat": 23.09,
+  "lon": 72.507,
+  "speedKmh": 70,
+  "ignition": true
+ },
+ {
+  "deviceId": "V105",
+  "timestamp": "2026-10-26T09:40:40Z",
+  "lat": 23.04375,
+  "lon": 72.55,
+  "speedKmh": 85,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:11:55Z",
+  "lat": 23.018,
+  "lon": 72.537,
+  "speedKmh": 98,
+  "ignition": true
+ },
+ {
+  "deviceId": "V103",
+  "timestamp": "2026-10-26T09:20:10Z",
+  "lat": 23.03,
+  "lon": 72.5074,
+  "speedKmh": 90,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:11:30Z",
+  "lat": 23.018,
+  "lon": 72.530273,
+  "speedKmh": 102,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:11:50Z",
+  "lat": 23.018,
+  "lon": 72.5355,
+  "speedKmh": 98,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:11:40Z",
+  "lat": 23.018,
+  "lon": 72.533,
+  "speedKmh": 102,
+  "ignition": true
+ },
+ {
+  "deviceId": "V105",
+  "timestamp": "2026-10-26T09:41:10Z",
+  "lat": 23.035,
+  "lon": 72.55,
+  "speedKmh": 70,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:12:20Z",
+  "lat": 23.018,
+  "lon": 72.54325,
+  "speedKmh": 95,
+  "ignition": true
+ },
+ {
+  "deviceId": "V104",
+  "timestamp": "2026-10-26T09:31:05Z",
+  "lat": 23.09,
+  "lon": 72.518,
+  "speedKmh": 0,
+  "ignition": false
+ },
+ {
+  "deviceId": "V101",
+  "timestamp": "2026-10-26T09:01:00Z",
+  "lat": 23.01,
+  "lon": 72.551,
+  "speedKmh": 55,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:10:45Z",
+  "lat": 23.018,
+  "lon": 72.518,
+  "speedKmh": 102,
+  "ignition": true
+ },
+ {
+  "deviceId": "V101",
+  "timestamp": "2026-10-26T09:01:55Z",
+  "lat": 23.01,
+  "lon": 72.559,
+  "speedKmh": 25,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:11:00Z",
+  "lat": 23.018,
+  "lon": 72.522091,
+  "speedKmh": 102,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:11:05Z",
+  "lat": 23.018,
+  "lon": 72.523455,
+  "speedKmh": 102,
+  "ignition": true
+ },
+ {
+  "deviceId": "V101",
+  "timestamp": "2026-10-26T09:01:30Z",
+  "lat": 23.01,
+  "lon": 72.55625,
+  "speedKmh": 55,
+  "ignition": true
+ },
+ {
+  "deviceId": "V104",
+  "timestamp": "2026-10-26T09:30:15Z",
+  "lat": 23.09,
+  "lon": 72.508,
+  "speedKmh": 70,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:11:05Z",
+  "lat": 23.018,
+  "lon": 72.523455,
+  "speedKmh": 102,
+  "ignition": true
+ },
+ {
+  "deviceId": "V101",
+  "timestamp": "2026-10-26T09:00:25Z",
+  "lat": 23.01,
+  "lon": 72.526818,
+  "speedKmh": 95,
+  "ignition": true
+ },
+ {
+  "deviceId": "V101",
+  "timestamp": "2026-10-26T09:02:00Z",
+  "lat": 23.01,
+  "lon": 72.55925,
+  "speedKmh": 25,
+  "ignition": true
+ },
+ {
+  "deviceId": "V101",
+  "timestamp": "2026-10-26T09:00:35Z",
+  "lat": 23.01,
+  "lon": 72.529545,
+  "speedKmh": 95,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:10:35Z",
+  "lat": 23.018,
+  "lon": 72.5155,
+  "speedKmh": 110,
+  "ignition": true
+ },
+ {
+  "deviceId": "V104",
+  "timestamp": "2026-10-26T09:30:45Z",
+  "lat": 23.09,
+  "lon": 72.514,
+  "speedKmh": 70,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:11:35Z",
+  "lat": 23.018,
+  "lon": 72.531636,
+  "speedKmh": 102,
+  "ignition": true
+ },
+ {
+  "deviceId": "V101",
+  "timestamp": "2026-10-26T09:00:10Z",
+  "lat": 23.01,
+  "lon": 72.522727,
+  "speedKmh": 95,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:12:00Z",
+  "lat": 23.018,
+  "lon": 72.538,
+  "speedKmh": 108,
+  "ignition": true
+ },
+ {
+  "deviceId": "V101",
+  "timestamp": "2026-10-26T09:01:20Z",
+  "lat": 23.01,
+  "lon": 72.5545,
+  "speedKmh": 55,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:10:55Z",
+  "lat": 23.018,
+  "lon": 72.520727,
+  "speedKmh": 102,
+  "ignition": true
+ },
+ {
+  "deviceId": "V103",
+  "timestamp": "2026-10-26T09:20:05Z",
+  "lat": 23.03,
+  "lon": 72.5062,
+  "speedKmh": 90,
+  "ignition": true
+ },
+ {
+  "deviceId": "V105",
+  "timestamp": "2026-10-26T09:41:15Z",
+  "lat": 23.034,
+  "lon": 72.55,
+  "speedKmh": 0,
+  "ignition": false
+ },
+ {
+  "deviceId": "V101",
+  "timestamp": "2026-10-26T09:01:50Z",
+  "lat": 23.01,
+  "lon": 72.55875,
+  "speedKmh": 25,
+  "ignition": true
+ },
+ {
+  "deviceId": "V105",
+  "timestamp": "2026-10-26T09:40:05Z",
+  "lat": 23.05625,
+  "lon": 72.55,
+  "speedKmh": 75,
+  "ignition": true
+ },
+ {
+  "deviceId": "V101",
+  "timestamp": "2026-10-26T09:00:30Z",
+  "lat": 23.01,
+  "lon": 72.528182,
+  "speedKmh": 95,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:11:45Z",
+  "lat": 23.018,
+  "lon": 72.534,
+  "speedKmh": 98,
+  "ignition": true
+ },
+ {
+  "deviceId": "V104",
+  "timestamp": "2026-10-26T09:30:55Z",
+  "lat": 23.09,
+  "lon": 72.516,
+  "speedKmh": 70,
+  "ignition": true
+ },
+ {
+  "deviceId": "V105",
+  "timestamp": "2026-10-26T09:40:30Z",
+  "lat": 23.04725,
+  "lon": 72.55,
+  "speedKmh": 85,
+  "ignition": true
+ },
+ {
+  "deviceId": "V103",
+  "timestamp": "2026-10-26T09:20:50Z",
+  "lat": 23.03,
+  "lon": 72.5162,
+  "speedKmh": 90,
+  "ignition": true
+ },
+ {
+  "deviceId": "V105",
+  "timestamp": "2026-10-26T09:40:25Z",
+  "lat": 23.049,
+  "lon": 72.55,
+  "speedKmh": 85,
+  "ignition": true
+ },
+ {
+  "deviceId": "V101",
+  "timestamp": "2026-10-26T09:01:35Z",
+  "lat": 23.01,
+  "lon": 72.557125,
+  "speedKmh": 55,
+  "ignition": true
+ },
+ {
+  "deviceId": "V103",
+  "timestamp": "2026-10-26T09:21:10Z",
+  "lat": 23.03,
+  "lon": 72.521,
+  "speedKmh": 90,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:11:20Z",
+  "lat": 23.018,
+  "lon": 72.527545,
+  "speedKmh": 102,
+  "ignition": true
+ },
+ {
+  "deviceId": "V105",
+  "timestamp": "2026-10-26T09:40:00Z",
+  "lat": 23.058,
+  "lon": 72.55,
+  "speedKmh": 75,
+  "ignition": true
+ },
+ {
+  "deviceId": "V101",
+  "timestamp": "2026-10-26T09:01:40Z",
+  "lat": 23.01,
+  "lon": 72.558,
+  "speedKmh": 55,
+  "ignition": true
+ },
+ {
+  "deviceId": "V101",
+  "timestamp": "2026-10-26T09:00:00Z",
+  "lat": 23.01,
+  "lon": 72.52,
+  "speedKmh": 95,
+  "ignition": true
+ },
+ {
+  "deviceId": "V105",
+  "timestamp": "2026-10-26T09:40:55Z",
+  "lat": 23.0395,
+  "lon": 72.55,
+  "speedKmh": 70,
+  "ignition": true
+ },
+ {
+  "deviceId": "V105",
+  "timestamp": "2026-10-26T09:40:05Z",
+  "lat": 23.05625,
+  "lon": 72.55,
+  "speedKmh": 75,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:12:30Z",
+  "lat": 23.018,
+  "lon": 72.54575,
+  "speedKmh": 95,
+  "ignition": true
+ },
+ {
+  "deviceId": "V105",
+  "timestamp": "2026-10-26T09:40:45Z",
+  "lat": 23.042,
+  "lon": 72.55,
+  "speedKmh": 85,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:12:10Z",
+  "lat": 23.018,
+  "lon": 72.541,
+  "speedKmh": 108,
+  "ignition": true
+ },
+ {
+  "deviceId": "V105",
+  "timestamp": "2026-10-26T09:40:15Z",
+  "lat": 23.05275,
+  "lon": 72.55,
+  "speedKmh": 75,
+  "ignition": true
+ },
+ {
+  "deviceId": "V101",
+  "timestamp": "2026-10-26T09:02:05Z",
+  "lat": 23.01,
+  "lon": 72.5595,
+  "speedKmh": 25,
+  "ignition": true
+ },
+ {
+  "deviceId": "V103",
+  "timestamp": "2026-10-26T09:20:55Z",
+  "lat": 23.03,
+  "lon": 72.5174,
+  "speedKmh": 90,
+  "ignition": true
+ },
+ {
+  "deviceId": "V103",
+  "timestamp": "2026-10-26T09:21:00Z",
+  "lat": 23.03,
+  "lon": 72.5186,
+  "speedKmh": 90,
+  "ignition": true
+ },
+ {
+  "deviceId": "V104",
+  "timestamp": "2026-10-26T09:31:00Z",
+  "lat": 23.09,
+  "lon": 72.517,
+  "speedKmh": 70,
+  "ignition": true
+ },
+ {
+  "deviceId": "V104",
+  "timestamp": "2026-10-26T09:30:05Z",
+  "lat": 23.09,
+  "lon": 72.506,
+  "speedKmh": 70,
+  "ignition": true
+ },
+ {
+  "deviceId": "V103",
+  "timestamp": "2026-10-26T09:20:20Z",
+  "lat": 23.03,
+  "lon": 72.5098,
+  "speedKmh": 90,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:10:10Z",
+  "lat": 23.018,
+  "lon": 72.508,
+  "speedKmh": 110,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:10:00Z",
+  "lat": 23.018,
+  "lon": 72.505,
+  "speedKmh": 110,
+  "ignition": true
+ },
+ {
+  "deviceId": "V105",
+  "timestamp": "2026-10-26T09:40:10Z",
+  "lat": 23.0545,
+  "lon": 72.55,
+  "speedKmh": 75,
+  "ignition": true
+ },
+ {
+  "deviceId": "V105",
+  "timestamp": "2026-10-26T09:41:05Z",
+  "lat": 23.0365,
+  "lon": 72.55,
+  "speedKmh": 70,
+  "ignition": true
+ },
+ {
+  "deviceId": "V101",
+  "timestamp": "2026-10-26T09:00:20Z",
+  "lat": 23.01,
+  "lon": 72.525455,
+  "speedKmh": 95,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:12:15Z",
+  "lat": 23.018,
+  "lon": 72.542,
+  "speedKmh": 95,
+  "ignition": true
+ },
+ {
+  "deviceId": "V103",
+  "timestamp": "2026-10-26T09:21:15Z",
+  "lat": 23.03,
+  "lon": 72.522,
+  "speedKmh": 0,
+  "ignition": false
+ },
+ {
+  "deviceId": "V101",
+  "timestamp": "2026-10-26T09:00:55Z",
+  "lat": 23.01,
+  "lon": 72.535,
+  "speedKmh": 95,
+  "ignition": true
+ },
+ {
+  "deviceId": "V103",
+  "timestamp": "2026-10-26T09:20:45Z",
+  "lat": 23.03,
+  "lon": 72.515,
+  "speedKmh": 90,
+  "ignition": true
+ },
+ {
+  "deviceId": "V105",
+  "timestamp": "2026-10-26T09:40:35Z",
+  "lat": 23.0455,
+  "lon": 72.55,
+  "speedKmh": 85,
+  "ignition": true
+ },
+ {
+  "deviceId": "V104",
+  "timestamp": "2026-10-26T09:30:50Z",
+  "lat": 23.09,
+  "lon": 72.515,
+  "speedKmh": 70,
+  "ignition": true
+ },
+ {
+  "deviceId": "V101",
+  "timestamp": "2026-10-26T09:01:05Z",
+  "lat": 23.01,
+  "lon": 72.551875,
+  "speedKmh": 55,
+  "ignition": true
+ },
+ {
+  "deviceId": "V105",
+  "timestamp": "2026-10-26T09:41:00Z",
+  "lat": 23.038,
+  "lon": 72.55,
+  "speedKmh": 70,
+  "ignition": true
+ },
+ {
+  "deviceId": "V101",
+  "timestamp": "2026-10-26T09:01:25Z",
+  "lat": 23.01,
+  "lon": 72.555375,
+  "speedKmh": 55,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:10:05Z",
+  "lat": 23.018,
+  "lon": 72.5065,
+  "speedKmh": 110,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:10:20Z",
+  "lat": 23.018,
+  "lon": 72.511,
+  "speedKmh": 110,
+  "ignition": true
+ },
+ {
+  "deviceId": "V102",
+  "timestamp": "2026-10-26T09:10:40Z",
+  "lat": 23.018,
+  "lon": 72.517,
+  "speedKmh": 110,
+  "ignition": true
+ },
+ {
+  "deviceId": "V105",
+  "timestamp": "2026-10-26T09:40:20Z",
+  "lat": 23.051,
+  "lon": 72.55,
+  "speedKmh": 75,
+  "ignition": true
+ },
+ {
+  "deviceId": "V101",
+  "timestamp": "2026-10-26T09:00:15Z",
+  "lat": 23.01,
+  "lon": 72.524091,
+  "speedKmh": 95,
+  "ignition": true
+ },
+ {
+  "deviceId": "V101",
+  "timestamp": "2026-10-26T09:01:10Z",
+  "lat": 23.01,
+  "lon": 72.55275,
+  "speedKmh": 55,
+  "ignition": true
+ },
+ {
+  "deviceId": "V104",
+  "timestamp": "2026-10-26T09:30:25Z",
+  "lat": 23.09,
+  "lon": 72.51,
+  "speedKmh": 70,
+  "ignition": true
+ }
+]

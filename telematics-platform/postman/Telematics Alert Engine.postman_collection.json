@@ -1,0 +1,374 @@
+{
+  "info": {
+    "_postman_id": "d38a1710-83dd-4b79-9f88-a34dce7dccd2",
+    "name": "Telematics Alert Engine",
+    "description": "Smoke tests and a data-driven packet request for the Spring Boot alert API.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Set test clock",
+      "request": {
+        "method": "PUT",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"now\": \"2026-10-27T00:00:00Z\"\n}",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/test/clock",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "v1", "test", "clock"]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('test clock updated', function () {",
+              "  pm.response.to.have.status(200);",
+              "  pm.expect(pm.response.json().now).to.eql('2026-10-27T00:00:00Z');",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ingest overspeed demo",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\n  {\"deviceId\":\"POSTMAN-DEMO\",\"timestamp\":\"2026-10-26T09:00:00Z\",\"lat\":23.01,\"lon\":72.555,\"speedKmh\":50,\"ignition\":true},\n  {\"deviceId\":\"POSTMAN-DEMO\",\"timestamp\":\"2026-10-26T09:00:15Z\",\"lat\":23.01,\"lon\":72.555,\"speedKmh\":55,\"ignition\":true},\n  {\"deviceId\":\"POSTMAN-DEMO\",\"timestamp\":\"2026-10-26T09:00:30Z\",\"lat\":23.01,\"lon\":72.555,\"speedKmh\":60,\"ignition\":true}\n]",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/packets",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "v1", "packets"]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('all three unique packets accepted', function () {",
+              "  pm.response.to.have.status(200);",
+              "  pm.expect(pm.response.json().acceptedCount).to.eql(3);",
+              "  pm.expect(pm.response.json().rejectedCount).to.eql(0);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "List overspeed alerts",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/alerts?deviceId=POSTMAN-DEMO&type=OVERSPEED",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "v1", "alerts"],
+          "query": [
+            { "key": "deviceId", "value": "POSTMAN-DEMO" },
+            { "key": "type", "value": "OVERSPEED" }
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('overspeed alert opens in overlapping school zone', function () {",
+              "  pm.response.to.have.status(200);",
+              "  const alerts = pm.response.json();",
+              "  pm.expect(alerts).to.have.length(1);",
+              "  pm.expect(alerts[0].status).to.eql('OPEN');",
+              "  pm.expect(alerts[0].details.worstZoneId).to.eql('SCHOOL-DPS');",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Validate partial batch and duplicate idempotency",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\n  {\"deviceId\":\"POSTMAN-CHECK\",\"timestamp\":\"2026-10-26T09:00:00Z\",\"lat\":23,\"lon\":72,\"speedKmh\":20,\"ignition\":true},\n  {\"deviceId\":\"POSTMAN-CHECK\",\"timestamp\":\"2026-10-26T09:00:00Z\",\"lat\":23,\"lon\":72,\"speedKmh\":20,\"ignition\":true},\n  {\"deviceId\":\"POSTMAN-BAD\",\"timestamp\":\"2026-10-26T09:00:00Z\",\"lat\":91,\"lon\":72,\"speedKmh\":20,\"ignition\":true}\n]",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/packets",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "v1", "packets"]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('partial acceptance, duplicate ignored, invalid rejected', function () {",
+              "  pm.response.to.have.status(200);",
+              "  const result = pm.response.json();",
+              "  pm.expect(result.acceptedCount).to.eql(1);",
+              "  pm.expect(result.duplicateCount).to.eql(1);",
+              "  pm.expect(result.rejectedCount).to.eql(1);",
+              "  pm.expect(result.rejections[0].reason).to.include('lat');",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Set fatigue demo clock",
+      "request": {
+        "method": "PUT",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"now\": \"2026-10-26T06:31:00Z\"\n}",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/test/clock",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "v1", "test", "clock"]
+        }
+      }
+    },
+    {
+      "name": "Ingest fatigue demo",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\n  {\"deviceId\":\"POSTMAN-FATIGUE\",\"timestamp\":\"2026-10-26T02:00:00Z\",\"lat\":23.03,\"lon\":72.505,\"speedKmh\":60,\"ignition\":true},\n  {\"deviceId\":\"POSTMAN-FATIGUE\",\"timestamp\":\"2026-10-26T06:30:00Z\",\"lat\":23.03,\"lon\":72.505,\"speedKmh\":60,\"ignition\":true}\n]",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/packets",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "v1", "packets"]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('fatigue demo packets are accepted', function () {",
+              "  pm.response.to.have.status(200);",
+              "  pm.expect(pm.response.json().acceptedCount).to.eql(2);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "List fatigue alerts",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/alerts?deviceId=POSTMAN-FATIGUE&type=FATIGUE",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "v1", "alerts"],
+          "query": [
+            { "key": "deviceId", "value": "POSTMAN-FATIGUE" },
+            { "key": "type", "value": "FATIGUE" }
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('fatigue alert opens at four hours thirty minutes', function () {",
+              "  pm.response.to.have.status(200);",
+              "  const alerts = pm.response.json();",
+              "  pm.expect(alerts).to.have.length(1);",
+              "  pm.expect(alerts[0].status).to.eql('OPEN');",
+              "  pm.expect(alerts[0].startTime).to.eql('2026-10-26T06:30:00Z');",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Set offline demo start clock",
+      "request": {
+        "method": "PUT",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"now\": \"2026-10-27T10:00:00Z\"\n}",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/test/clock",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "v1", "test", "clock"]
+        }
+      }
+    },
+    {
+      "name": "Ingest offline demo packet",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[{\"deviceId\":\"POSTMAN-OFFLINE\",\"timestamp\":\"2026-10-27T10:00:00Z\",\"lat\":23.03,\"lon\":72.505,\"speedKmh\":40,\"ignition\":true}]",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/packets",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "v1", "packets"]
+        }
+      }
+    },
+    {
+      "name": "Advance clock and check offline",
+      "request": {
+        "method": "PUT",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"now\": \"2026-10-27T10:15:00Z\"\n}",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/test/clock",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "v1", "test", "clock"]
+        }
+      }
+    },
+    {
+      "name": "List open offline alert",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/alerts?deviceId=POSTMAN-OFFLINE&type=DEVICE_OFFLINE",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "v1", "alerts"],
+          "query": [
+            { "key": "deviceId", "value": "POSTMAN-OFFLINE" },
+            { "key": "type", "value": "DEVICE_OFFLINE" }
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('offline alert opens at the silence threshold', function () {",
+              "  pm.response.to.have.status(200);",
+              "  const alerts = pm.response.json();",
+              "  pm.expect(alerts).to.have.length(1);",
+              "  pm.expect(alerts[0].status).to.eql('OPEN');",
+              "  pm.expect(alerts[0].startTime).to.eql('2026-10-27T10:00:00Z');",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ingest recovered offline packet",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[{\"deviceId\":\"POSTMAN-OFFLINE\",\"timestamp\":\"2026-10-27T10:15:00Z\",\"lat\":23.03,\"lon\":72.505,\"speedKmh\":40,\"ignition\":true}]",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/packets",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "v1", "packets"]
+        }
+      }
+    },
+    {
+      "name": "List closed offline alert",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/v1/alerts?deviceId=POSTMAN-OFFLINE&type=DEVICE_OFFLINE",
+          "host": ["{{baseUrl}}"],
+          "path": ["api", "v1", "alerts"],
+          "query": [
+            { "key": "deviceId", "value": "POSTMAN-OFFLINE" },
+            { "key": "type", "value": "DEVICE_OFFLINE" }
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('offline alert closes when the real outage ends', function () {",
+              "  pm.response.to.have.status(200);",
+              "  const alerts = pm.response.json();",
+              "  pm.expect(alerts).to.have.length(1);",
+              "  pm.expect(alerts[0].status).to.eql('CLOSED');",
+              "  pm.expect(alerts[0].endTime).to.eql('2026-10-27T10:15:00Z');",
+              "});"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

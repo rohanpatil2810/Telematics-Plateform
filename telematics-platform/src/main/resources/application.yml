@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: telematics-platform
+
+server:
+  port: 8080
+
+alerts:
+  overspeed:
+    tolerance-percent: 5
+    open-duration: 30s
+    close-duration: 15s
+  fatigue:
+    driving-threshold: PT4H30M
+    single-break-reset: PT45M
+    first-split-break: PT15M
+    second-split-break: PT30M
+  offline:
+    timeout: 15m
+    check-interval-ms: 60000
+  packet:
+    future-tolerance: 1m

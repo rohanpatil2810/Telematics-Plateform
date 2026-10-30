@@ -1,0 +1,70 @@
+{
+  "defaultSpeedLimitKmh": 80,
+  "zones": [
+    {
+      "zoneId": "HIGHWAY-NH48",
+      "name": "NH48 Highway",
+      "speedLimitKmh": 100,
+      "polygon": [
+        [
+          23.0,
+          72.5
+        ],
+        [
+          23.0,
+          72.6
+        ],
+        [
+          23.02,
+          72.6
+        ],
+        [
+          23.02,
+          72.5
+        ]
+      ]
+    },
+    {
+      "zoneId": "SCHOOL-DPS",
+      "name": "DPS School Zone",
+      "speedLimitKmh": 30,
+      "polygon": [
+        [
+          23.005,
+          72.55
+        ],
+        [
+          23.005,
+          72.56
+        ],
+        [
+          23.015,
+          72.56
+        ],
+        [
+          23.015,
+          72.55
+        ]
+      ]
+    },
+    {
+      "zoneId": "CITY-CENTRAL",
+      "name": "Central City",
+      "speedLimitKmh": 60,
+      "polygon": [
+        [
+          23.05,
+          72.5
+        ],
+        [
+          23.05,
+          72.6
+        ],
+        [
+          23.1,
+          72.55
+        ]
+      ]
+    }
+  ]
+}
